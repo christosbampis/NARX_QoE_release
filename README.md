@@ -20,7 +20,9 @@ IN NO EVENT SHALL THE UNIVERSITY OF TEXAS AT AUSTIN BE LIABLE TO ANY PARTY FOR D
 
 Author  : Christos Bampis
 
-Version : 1.0
+Version : 2.0
+
+Comments: This code allows experimentation on three different datasets. In the new version, a Hammertein-Wiener implementation is also added. It should be noted that the related parameters (e.g. number of pole and zeros in the transfer function) need to be carefully selected for better performance in each of the three databases. 
 
 The authors are with the Laboratory for Image and Video Engineering (LIVE), Department of Electrical and Computer Engineering, The University of Texas at Austin, Austin, TX.
 
