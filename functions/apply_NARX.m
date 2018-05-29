@@ -33,7 +33,7 @@ for n_inner = 1 : N_inner_trials
                     net_for_test = closeloop(narxnet(ID, FD, H));
                 else
                     net_for_test = narxnet(ID, FD, H);
-                end;
+                end
                 
                 disp(['Testing on: ID = ' num2str(max(ID)) ', FD = ' num2str(max(FD)) ', H = ' num2str(H)])
                 
@@ -63,10 +63,10 @@ for n_inner = 1 : N_inner_trials
                 NARX_preds{n_inner, I_ind, F_ind, H_ind} = narx_pred_now;
                 NARX_gts{n_inner, I_ind, F_ind, H_ind} = gt_now;
                 
-            end;
-        end;
-    end;
-end;
+            end
+        end
+    end
+end
 
 end
 

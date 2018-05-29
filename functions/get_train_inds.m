@@ -17,20 +17,20 @@ if strcmp(db_train, db_test) == 1
             test_team = 2;
         else
             test_team = 1;
-        end;
+        end
         
         train_team = setdiff([1 2 3], test_team);
         
         train_inds = [];
         if ~isempty(find(train_team == 1, 1))
             train_inds = [train_inds 1:5];
-        end;
+        end
         if ~isempty(find(train_team == 2, 1))
             train_inds = [train_inds 6:10];
-        end;
+        end
         if ~isempty(find(train_team == 3, 1))
             train_inds = [train_inds 11:15];
-        end;
+        end
         
         only_qual = 1;
         Train_Matrix_FeedIn = [];
@@ -59,7 +59,7 @@ if strcmp(db_train, db_test) == 1
         
         disp('error')
         
-    end;
+    end
     
 else
     
@@ -81,7 +81,7 @@ else
         
         disp('error')
         
-    end;
+    end
     
 end
 
